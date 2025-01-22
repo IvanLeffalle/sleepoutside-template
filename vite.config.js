@@ -3,13 +3,13 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "src/",
-
   build: {
     outDir: "../dist",
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
         cart: resolve(__dirname, "src/cart/index.html"),
+<<<<<<< Updated upstream
         checkout: resolve(__dirname, "src/checkout/index.html"),
         product1: resolve(
           __dirname,
@@ -24,6 +24,9 @@ export default defineConfig({
           __dirname,
           "src/product_pages/northface-talus-4.html"
         ),
+=======
+        product: resolve(__dirname, "src/product_pages/index.html"),
+>>>>>>> Stashed changes
       },
     },
   },
